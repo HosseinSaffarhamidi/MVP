@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/card_newsRow_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginRight="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_below="@+id/txt_newsRow_sourceNews"
+            android:id="@+id/img_newsRow_icon"
+            tools:src="@mipmap/ic_launcher"
+            android:layout_margin="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="90dp"
+            android:layout_height="90dp" />
+
+        <TextView
+            android:layout_margin="8dp"
+            tools:text="17 مرداد"
+            android:id="@+id/txt_newsRow_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginRight="8dp"
+            android:id="@+id/txt_newsRow_sourceNews"
+            android:layout_alignParentRight="true"
+            android:text="حسین صفارحمیدی"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="#000000"
+            android:layout_marginRight="8dp"
+            tools:text="بهترین گوشی های اندرویدی 2020"
+            android:layout_below="@id/txt_newsRow_date"
+            android:layout_toLeftOf="@+id/img_newsRow_icon"
+            android:id="@+id/txt_newRow_title"
+            android:maxLines="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/view_newsRow_line"
+            android:background="@color/gray300"
+            android:layout_below="@+id/img_newsRow_icon"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <RelativeLayout
+            android:padding="8dp"
+            android:layout_below="@id/view_newsRow_line"
+            android:id="@+id/rel_newsRow_iconBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/img_newsRow_seen"
+                app:srcCompat="@drawable/ic_remove_red_eye_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:text="135"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/img_newsRow_seen"
+                android:id="@+id/txt_newsRow_seenCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/txt_newsRow_seenCount"
+                android:id="@+id/img_newsRow_cat"
+                app:srcCompat="@drawable/ic_language_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:text="تکنولوژی"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/img_newsRow_cat"
+                android:id="@+id/txt_newsRow_catName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/txt_newsRow_catName"
+                android:id="@+id/img_newsRow_bookmark"
+                app:srcCompat="@drawable/ic_cloud_done_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

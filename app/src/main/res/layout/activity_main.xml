@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <com.ss.bottomnavigation.BottomNavigation
+        android:layout_alignParentEnd="true"
+        android:elevation="4dp"
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:mode="phone">
+
+        <com.ss.bottomnavigation.TabItem
+            android:id="@+id/tab_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:tab_icon="@drawable/ic_news_black_24dp"
+            app:tab_text="اخبار"
+            app:unselected_tab_text_color="@color/gray300"
+            app:unselected_tab_icon="@drawable/ic_news_gray_24dp"
+            app:tab_text_color="@color/colorPrimary" />
+
+        <com.ss.bottomnavigation.TabItem
+            android:id="@+id/tab_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:tab_icon="@drawable/ic_book_black_24dp"
+            app:tab_text="جستجو"
+            app:tab_text_color="@color/colorPrimary" />
+
+        <com.ss.bottomnavigation.TabItem
+            android:id="@+id/tab_cats"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:tab_icon="@drawable/ic_cloud_done_black_24dp"
+            app:tab_text="دسته ها"
+            app:tab_text_color="@color/colorPrimary" />
+
+        <com.ss.bottomnavigation.TabItem
+            android:id="@+id/tab_bests"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:tab_icon="@drawable/ic_language_black_24dp"
+            app:tab_text="برترین ها"
+            app:tab_text_color="@color/colorPrimary" />
+
+
+    </com.ss.bottomnavigation.BottomNavigation>
+
+    <RelativeLayout
+        android:layout_above="@+id/bottom_navigation"
+        android:id="@+id/rel_main_fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

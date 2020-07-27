@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <EditText
+      android:id="@+id/edt_fragmentSearch_search"
+      android:background="@drawable/edt_shape"
+      android:padding="8dp"
+      android:hint="جستجو..."
+      android:layout_margin="8dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_fragmentSearch_searchedNews"
+        android:layout_below="@+id/edt_fragmentSearch_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+  <TextView
+      android:visibility="gone"
+      android:id="@+id/txt_fragmentSearch_notFound"
+      android:textSize="22sp"
+      android:layout_centerInParent="true"
+      android:text="موردی یافت نشد"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+
+</RelativeLayout>
